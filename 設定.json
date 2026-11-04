@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "geometry": {
+    "hinge_width_mm": 86,
+    "hinge_length_mm": 98,
+    "propeller_diameter_mm": 108,
+    "required_clearance_mm": 10
+  },
+  "cases": [
+    {
+      "id": "example_a",
+      "label": "示範甲",
+      "arm_length_mm": 68,
+      "expanded_angle_deg": 50,
+      "folded_angle_deg": 24
+    },
+    {
+      "id": "example_b",
+      "label": "示範乙",
+      "arm_length_mm": 96,
+      "expanded_angle_deg": 50,
+      "folded_angle_deg": 16
+    }
+  ],
+  "sweep": {
+    "arm_length_mm": {
+      "min": 60,
+      "max": 108,
+      "step": 4
+    },
+    "folded_angle_deg": {
+      "min": 4,
+      "max": 50,
+      "step": 2
+    },
+    "expanded_angle_deg": 50
+  },
+  "motion": {
+    "duration_s": 3.2,
+    "completion_limit_s": 3.4,
+    "sample_step_s": 0.04,
+    "start_delays_s": [
+      0,
+      0.08,
+      0.16,
+      0.24
+    ]
+  },
+  "uncertainty": {
+    "angle_error_deg": 0.8,
+    "motor_position_error_mm": 0.4,
+    "angle_error_sweep_deg": {
+      "min": 0,
+      "max": 2.4,
+      "step": 0.2
+    }
+  },
+  "notes": "所有數值均為示範用途的虛構輸入。"
+}
